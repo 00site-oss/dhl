@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "DHL Courier",
+    "slug": "dhl-courier-iphone",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#D40511"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.dhl.courier",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to scan package barcodes and tracking numbers."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#D40511"
+      },
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan barcodes."
+        }
+      ]
+    ]
+  }
+}
